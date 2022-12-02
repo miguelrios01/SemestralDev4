@@ -23,7 +23,7 @@ width: 300px;
 }
 
 .contenedor2{
-    margin: auto;
+    margin-left: 150px;
     display: flex;
     flex-direction: column;
     width:auto;

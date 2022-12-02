@@ -11,6 +11,25 @@ function ObtenerProductos() {
   });
 }
 
+/* Imprimir buscar */
+function ImprimirProductos() {
+  let contenedor = document.getElementById("cuerpoTablaBuscar");
+  contenedor.innerHTML = "";
+
+  productos.forEach(producto => {
+    contenedor.innerHTML += MapearProducto(producto);
+  });
+}
+
+function MapearProducto(producto) {
+  return `<tr>
+  <td>${producto.nombre}</td>
+  </tr>`;
+}
+
+
+/* Imprimir buscar end */
+
 function ImprimirProductos() {
   let contenedor = document.getElementById("cuerpoTabla");
   contenedor.innerHTML = "";
