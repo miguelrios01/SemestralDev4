@@ -11,24 +11,6 @@ function ObtenerProductos() {
   });
 }
 
-/* Imprimir buscar */
-function ImprimirProductos() {
-  let contenedor = document.getElementById("cuerpoTablaBuscar");
-  contenedor.innerHTML = "";
-
-  productos.forEach(producto => {
-    contenedor.innerHTML += MapearProducto(producto);
-  });
-}
-
-function MapearProducto(producto) {
-  return `<tr>
-  <td>${producto.nombre}</td>
-  </tr>`;
-}
-
-
-/* Imprimir buscar end */
 
 function ImprimirProductos() {
   let contenedor = document.getElementById("cuerpoTabla");
@@ -158,3 +140,25 @@ function MapearProducto2(desc) {
   </div>
   </div>`;
 }
+
+
+
+
+/* Imprimir buscar */
+function ImprimirProductos() {
+  let contenedor = document.getElementById("cuerpoTablaBuscar");
+  contenedor.innerHTML = "";
+
+  productos.forEach(producto => {
+    contenedor.innerHTML += MapearProducto(producto);
+  });
+}
+
+function MapearProducto(producto) {
+  return `<tr>
+  <td> <a href="../Plantilla/producto.html">${producto.nombre} </a></td>
+  </tr>`;
+}
+
+
+/* Imprimir buscar end */
